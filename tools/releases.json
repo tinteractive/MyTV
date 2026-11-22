@@ -1,5 +1,138 @@
 [
   {
+    "version": "2026.11.6",
+    "code": 2026110006,
+    "date": "2026-11-22",
+    "notes": [
+      {
+        "tag": "new",
+        "en": "The source code of MyTV Launcher is now on GitHub. Everyone is welcome to help: with ideas, reports or code",
+        "nl": "De broncode van MyTV Launcher staat nu op GitHub. Iedereen is welkom om mee te helpen: met ideeën, meldingen of code",
+        "fr": "Le code source de MyTV Launcher est maintenant sur GitHub. Chacun est le bienvenu pour aider : idées, signalements ou code",
+        "de": "Der Quellcode von MyTV Launcher ist jetzt auf GitHub. Alle sind willkommen mitzuhelfen: mit Ideen, Meldungen oder Code",
+        "es": "El código fuente de MyTV Launcher ya está en GitHub. Todos pueden ayudar: con ideas, avisos o código",
+        "pt": "O código-fonte do MyTV Launcher está agora no GitHub. Todos são bem-vindos para ajudar: com ideias, relatos ou código"
+      },
+      {
+        "tag": "new",
+        "en": "Other TVs: keep two TVs in the house the same. Link them once with a code, take over all settings and own photos, or let one TV follow the other by itself",
+        "nl": "Andere tv's: houd twee tv's in huis gelijk. Koppel ze één keer met een code, neem alle instellingen en eigen foto's over, of laat een tv de andere vanzelf volgen",
+        "fr": "Autres téléviseurs : gardez deux téléviseurs identiques. Associez-les une fois avec un code, reprenez tous les réglages et vos photos, ou laissez un téléviseur suivre l’autre automatiquement",
+        "de": "Andere Fernseher: Halte zwei Fernseher im Haus gleich. Verbinde sie einmal mit einem Code, übernimm alle Einstellungen und eigenen Fotos oder lass einen Fernseher dem anderen von selbst folgen",
+        "es": "Otras teles: mantén dos teles de casa iguales. Vincúlalas una vez con un código, copia todos los ajustes y tus fotos, o deja que una tele siga a la otra sola",
+        "pt": "Outras TVs: mantenha duas TVs da casa iguais. Ligue-as uma vez com um código, copie todas as definições e fotos próprias, ou deixe uma TV seguir a outra sozinha"
+      },
+      {
+        "tag": "new",
+        "en": "28 more languages, 34 in all",
+        "nl": "28 extra talen, 34 in totaal",
+        "fr": "28 langues de plus, 34 au total",
+        "de": "28 weitere Sprachen, 34 insgesamt",
+        "es": "28 idiomas más, 34 en total",
+        "pt": "Mais 28 idiomas, 34 no total"
+      },
+      {
+        "tag": "new",
+        "en": "Plex: continue watching from your own Plex server",
+        "nl": "Plex: verder kijken vanaf je eigen Plex-server",
+        "fr": "Plex : reprenez la lecture depuis votre propre serveur Plex",
+        "de": "Plex: Weiterschauen von deinem eigenen Plex-Server",
+        "es": "Plex: sigue viendo desde tu propio servidor Plex",
+        "pt": "Plex: continue a ver a partir do seu próprio servidor Plex"
+      },
+      {
+        "tag": "new",
+        "en": "Each profile has its own home screen settings",
+        "nl": "Elk profiel heeft zijn eigen instellingen voor het startscherm",
+        "fr": "Chaque profil a ses propres réglages de l’écran d’accueil",
+        "de": "Jedes Profil hat eigene Einstellungen für den Startbildschirm",
+        "es": "Cada perfil tiene sus propios ajustes de la pantalla de inicio",
+        "pt": "Cada perfil tem as suas próprias definições do ecrã inicial"
+      },
+      {
+        "tag": "new",
+        "en": "Remote control: choose what the Sources, Apps, colour and number buttons do",
+        "nl": "Afstandsbediening: kies wat de Bronnen-, Apps-, kleur- en cijfertoetsen doen",
+        "fr": "Télécommande : choisissez ce que font les touches Sources, Applis, de couleur et numériques",
+        "de": "Fernbedienung: Wähle, was die Quellen-, Apps-, Farb- und Zifferntasten tun",
+        "es": "Mando: elige qué hacen los botones Fuentes, Apps, de colores y numéricos",
+        "pt": "Comando: escolha o que fazem os botões Fontes, Apps, de cores e numéricos"
+      },
+      {
+        "tag": "new",
+        "en": "Clean up and quick updates now work on more TVs",
+        "nl": "Opruimen en snelle updates werken nu op meer tv's",
+        "fr": "Le nettoyage et les mises à jour rapides fonctionnent sur plus de téléviseurs",
+        "de": "Aufräumen und schnelle Updates funktionieren jetzt auf mehr Fernsehern",
+        "es": "Limpiar y las actualizaciones rápidas funcionan ahora en más teles",
+        "pt": "Limpar e as atualizações rápidas funcionam agora em mais TVs"
+      },
+      {
+        "tag": "improved",
+        "en": "Updates install more easily and quickly",
+        "nl": "Updates worden makkelijker en sneller geïnstalleerd",
+        "fr": "Les mises à jour s’installent plus facilement et plus vite",
+        "de": "Updates werden einfacher und schneller installiert",
+        "es": "Las actualizaciones se instalan de forma más fácil y rápida",
+        "pt": "As atualizações instalam-se de forma mais fácil e rápida"
+      },
+      {
+        "tag": "improved",
+        "en": "A faster TV: Clean up now knows the parts of more brands",
+        "nl": "Een snellere tv: Opruimen kent nu de onderdelen van meer merken",
+        "fr": "Un téléviseur plus rapide : le nettoyage connaît maintenant les composants de plus de marques",
+        "de": "Ein schnellerer Fernseher: Aufräumen kennt jetzt die Bestandteile von mehr Marken",
+        "es": "Una tele más rápida: Limpiar conoce ahora los componentes de más marcas",
+        "pt": "Uma TV mais rápida: Limpar conhece agora os componentes de mais marcas"
+      },
+      {
+        "tag": "improved",
+        "en": "Continue watching is on the right, under the weather, and has its own settings",
+        "nl": "Verder kijken staat rechts onder het weer en heeft eigen instellingen",
+        "fr": "Reprendre est à droite, sous la météo, et a ses propres réglages",
+        "de": "Weiterschauen steht rechts unter dem Wetter und hat eigene Einstellungen",
+        "es": "Seguir viendo está a la derecha, bajo el tiempo, y tiene sus propios ajustes",
+        "pt": "Continuar a ver está à direita, por baixo do tempo, e tem as suas próprias definições"
+      },
+      {
+        "tag": "improved",
+        "en": "Settings are arranged more clearly and the welcome screen is quicker",
+        "nl": "Instellingen zijn duidelijker ingedeeld en het welkomstscherm is sneller",
+        "fr": "Les réglages sont mieux organisés et l’écran de bienvenue est plus rapide",
+        "de": "Die Einstellungen sind übersichtlicher und der Willkommensbildschirm ist schneller",
+        "es": "Los ajustes están mejor ordenados y la pantalla de bienvenida es más rápida",
+        "pt": "As definições estão mais bem organizadas e o ecrã de boas-vindas é mais rápido"
+      },
+      {
+        "tag": "fixed",
+        "en": "Google TV: the Home button opens MyTV again",
+        "nl": "Google TV: de Home-toets opent MyTV weer",
+        "fr": "Google TV : le bouton Accueil ouvre de nouveau MyTV",
+        "de": "Google TV: Die Home-Taste öffnet wieder MyTV",
+        "es": "Google TV: el botón Inicio vuelve a abrir MyTV",
+        "pt": "Google TV: o botão Início volta a abrir o MyTV"
+      },
+      {
+        "tag": "fixed",
+        "en": "The Home button keeps opening MyTV, also when the TV stops MyTV in between",
+        "nl": "De Home-toets blijft MyTV openen, ook als de tv MyTV tussendoor stopt",
+        "fr": "Le bouton Accueil continue d’ouvrir MyTV, même si le téléviseur arrête MyTV entre-temps",
+        "de": "Die Home-Taste öffnet weiterhin MyTV, auch wenn der Fernseher MyTV zwischendurch beendet",
+        "es": "El botón Inicio sigue abriendo MyTV, también si la tele cierra MyTV entretanto",
+        "pt": "O botão Início continua a abrir o MyTV, também se a TV fechar o MyTV entretanto"
+      },
+      {
+        "tag": "fixed",
+        "en": "The screensaver time stays, also when the TV puts it back to “never”",
+        "nl": "De screensavertijd blijft staan, ook als de tv hem terugzet naar ‘nooit’",
+        "fr": "Le délai de l’économiseur d’écran reste, même si le téléviseur le remet sur « jamais »",
+        "de": "Die Bildschirmschoner-Zeit bleibt, auch wenn der Fernseher sie auf „nie“ zurücksetzt",
+        "es": "El tiempo del salvapantallas se mantiene, aunque la tele lo vuelva a poner en «nunca»",
+        "pt": "O tempo da proteção de ecrã mantém-se, mesmo que a TV o volte a pôr em «nunca»"
+      }
+    ]
+  },
+  {
     "version": "2026.11.5",
     "code": 2026110005,
     "date": "2026-11-15",

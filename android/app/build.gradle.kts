@@ -20,7 +20,7 @@ android {
         minSdk = 26
         targetSdk = 36
         // Version: <year>.<month>.<build>; the code follows from it (2026.11.1 -> 2026110001), always increasing.
-        val mytvVersion = "2026.11.5"
+        val mytvVersion = "2026.11.6"
         versionName = mytvVersion
         versionCode = mytvVersion.split('.').map { it.toInt() }.let { (y, m, b) -> y * 1_000_000 + m * 10_000 + b }
     }

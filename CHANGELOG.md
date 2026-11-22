@@ -3,7 +3,7 @@
 All notable changes to MyTV Launcher are listed here, newest first. Versions are `<year>.<month>.<build>`.
 The notes the app itself shows (in six languages) are in [tools/releases.json](tools/releases.json).
 
-## Unreleased
+## 2026.11.6
 
 - **Updates with one button:** with network debugging on and MyTV allowed there once, Install is the
   only press. MyTV checks the download as before, installs it through the TV's own debugging connection and opens
