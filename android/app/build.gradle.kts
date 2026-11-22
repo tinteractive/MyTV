@@ -104,7 +104,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.json:json:20260814")
     // Android in a plain JVM test (HomeState: overlay stack, focus, profiles, PIN); never part of the app itself.
-    testImplementation("org.robolectric:robolectric:4.17")
+    testImplementation("org.robolectric:robolectric:4.18.1")
 }
 
 // Static analysis of the Kotlin sources (both editions). Existing findings are in detekt-baseline.xml; new ones fail.
