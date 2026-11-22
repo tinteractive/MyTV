@@ -1,0 +1,46 @@
+[
+  {
+    "id": "coast",
+    "name": "Coast",
+    "file": "coast.webp",
+    "title": "Rubjerg Knude Fyr, Hjørring, Denmark, 1807072231, ako.jpg",
+    "author": "Ansgar Koreng",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rubjerg_Knude_Fyr,_Hj%C3%B8rring,_Denmark,_1807072231,_ako.jpg",
+    "changes": "cropped to 16:9, resized to 1920x1080, recompressed (WebP)"
+  },
+  {
+    "id": "fjord",
+    "name": "Fjord",
+    "file": "fjord.webp",
+    "title": "Afternoon at Tennfjorden, Raftsundet, Hinnøya, Norway, 2015 September.jpg",
+    "author": "Ximonic (Simo Räsänen)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Afternoon_at_Tennfjorden,_Raftsundet,_Hinn%C3%B8ya,_Norway,_2015_September.jpg",
+    "changes": "cropped to 16:9, resized to 1920x1080, recompressed (WebP)"
+  },
+  {
+    "id": "windmill",
+    "name": "Windmill",
+    "file": "windmill.webp",
+    "title": "Overwaard Mill No.4, sunrise.jpg",
+    "author": "Dmytro Balkhovitin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Overwaard_Mill_No.4,_sunrise.jpg",
+    "changes": "cropped to 16:9, resized to 1920x1080, recompressed (WebP)"
+  },
+  {
+    "id": "misty-valley",
+    "name": "Misty valley",
+    "file": "misty-valley.webp",
+    "title": "21-224-5054 NNP Synevyr RB 18.jpg",
+    "author": "Rbrechko",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:21-224-5054_NNP_Synevyr_RB_18.jpg",
+    "changes": "cropped to 16:9, resized to 1920x1080, recompressed (WebP)"
+  }
+]

@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: GPL-3.0-only -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Install MyTV Launcher</title>
+<meta name="description" content="Install MyTV Launcher, a calm home screen for Android TV and Google TV, in a few minutes.">
+<meta name="theme-color" content="#1b2a3a">
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;line-height:1.5;
+background:radial-gradient(130% 70% at 15% 0%,#3d5f80 0%,#1b2a3a 48%,#0e1319 100%) fixed #0e1319;padding:28px 18px 60px}
+main{max-width:720px;margin:0 auto}
+h1{font-size:34px;line-height:1.15;margin:8px 0 6px}
+.lead{color:rgba(255,255,255,.78);font-size:18px;margin:0 0 26px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:20px 22px;margin:0 0 16px}
+.card h2{font-size:20px;margin:0 0 4px}.who{color:rgba(255,255,255,.62);font-size:14px;margin:0 0 12px}
+ol{margin:0;padding-left:22px}li{margin:6px 0}
+.code{display:inline-block;font:700 30px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;background:#fff;color:#14171b;
+padding:10px 16px;border-radius:14px;margin:4px 0}
+pre{background:rgba(0,0,0,.35);border-radius:12px;padding:12px 14px;overflow-x:auto;font-size:14px;margin:8px 0;white-space:pre-wrap;word-break:break-all}
+a{color:#9fd0ff}.note{color:rgba(255,255,255,.7);font-size:15px}
+.prep{border-left:3px solid #30d158;padding-left:14px}
+</style>
+</head>
+<body><main>
+<h1>Install MyTV Launcher</h1>
+<p class="lead">A calm home screen for Android TV and Google TV. Choose the way that fits what you have at hand; it takes a few minutes.</p>
+
+<div class="card">
+  <h2>With only the TV and its remote</h2>
+  <p class="who">No computer needed.</p>
+  <ol>
+    <li>On the TV, install <b>Downloader</b> (by AFTVnews) from the Google Play Store, or from
+      <a href="https://play.google.com/store/apps/details?id=com.esaba.downloader">its Play Store page</a>.</li>
+    <li>Open Downloader and type this code:<br><span class="code">3805347</span></li>
+    <li>Allow Downloader to install apps when the TV asks, and install MyTV Launcher.</li>
+    <li>Open MyTV Launcher. Its welcome screen guides you through the rest: language, weather, the Home button, a start-up app,
+      Continue watching and profiles.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>With a computer on the same Wi-Fi</h2>
+  <p class="who">Windows, Mac or Linux. Also sets up the extra permission, so the Home button works straight away.</p>
+  <div class="prep">
+    <p><b>First, on the TV:</b></p>
+    <ol>
+      <li>Settings → Device preferences (or System) → About → press OK on <b>Build</b> seven times.</li>
+      <li>Developer options → switch on <b>USB debugging</b>, and <b>Network debugging</b> if it is there.
+        Newer Google TVs (Android 12 and up): <b>Wireless debugging</b> instead, with a pairing code.</li>
+      <li>Keep the TV on. The installer finds it on your network by itself.</li>
+    </ol>
+  </div>
+  <p><b>Then on the computer:</b></p>
+  <p class="note">Windows, in PowerShell:</p>
+  <pre>irm https://raw.githubusercontent.com/tinteractive/MyTV/main/install/windows.ps1 | iex</pre>
+  <p class="note">Mac or Linux, in a terminal:</p>
+  <pre>curl -fsSL https://raw.githubusercontent.com/tinteractive/MyTV/main/install/install.sh | bash</pre>
+  <p class="note">The installer finds the TV (or asks for its address), and you accept <b>"Allow USB debugging?"</b> on the TV.
+    It installs nothing on the computer. Afterwards you can switch debugging off again.</p>
+</div>
+
+<div class="card">
+  <h2>With an AI coding agent</h2>
+  <p class="who">Claude Code or a similar agent on a computer on the same Wi-Fi.</p>
+  <p>Get the code from <a href="https://github.com/tinteractive/MyTV">github.com/tinteractive/MyTV</a>, open the folder
+    with your agent and say <i>"install MyTV Launcher on my TV"</i>. It follows
+    <a href="https://github.com/tinteractive/MyTV/blob/main/AGENTS.md">AGENTS.md</a> and changes nothing until you say yes.</p>
+</div>
+
+<p class="note">Removing MyTV Launcher, and switching everything back:
+  <a href="https://github.com/tinteractive/MyTV/blob/main/docs/ROLLBACK.md">docs/ROLLBACK.md</a>.
+  Everything else: <a href="https://github.com/tinteractive/MyTV">the project page</a>.</p>
+</main></body>
+</html>

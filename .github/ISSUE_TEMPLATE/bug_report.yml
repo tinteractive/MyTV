@@ -1,0 +1,61 @@
+name: Report a problem
+description: Something in MyTV Launcher does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please write in English if you can; other languages are fine too.
+        Do not include personal details such as your IP address, location or account names.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Settings → …
+        2. Press OK on …
+        3. …
+  - type: input
+    id: version
+    attributes:
+      label: MyTV version
+      description: Settings → System → About MyTV Launcher
+      placeholder: "2026.11.2"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: TV or box
+      description: Brand and model
+      placeholder: "e.g. Sony Bravia XR-55A80J, Chromecast with Google TV"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Android TV or Google TV?
+      options:
+        - Android TV
+        - Google TV
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: TV settings → Device preferences → About
+      placeholder: "e.g. 11"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots or photos of the screen help a lot.

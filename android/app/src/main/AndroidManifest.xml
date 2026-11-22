@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Start-up app only once the internet works. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- After a boot: switch the Home-button helper back on when needed. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- No BLUETOOTH_ADMIN: with it this Philips held MyTV back ~4 s after every Home press. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- "Continue watching": read the Watch Next row apps publish (runtime permission, asked on screen). -->
+    <uses-permission android:name="android.permission.READ_TV_LISTINGS" />
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA" />
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+    <!-- "Modify system settings": screensaver start time without network debugging, when the owner allows it. -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <!-- The Bluetooth sheet is optional: a TV or box without Bluetooth can install MyTV. -->
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+    <!-- Android 11+ package visibility: we only need launchable apps. -->
+    <queries>
+        <!-- The Android TV settings app: its screensaver page and main panel are opened from MyTV's settings. -->
+        <package android:name="com.android.tv.settings" />
+        <package android:name="org.droidtv.candeebug" />
+        <package android:name="org.droidtv.tv.frameworklogger" />
+        <package android:name="com.google.android.feedback" />
+        <package android:name="com.google.android.tvrecommendations" />
+        <package android:name="org.droidtv.nettvrecommender" />
+        <package android:name="org.droidtv.recommendation" />
+        <package android:name="org.droidtv.nettv.market" />
+        <package android:name="org.droidtv.nettvregistration" />
+        <package android:name="android.autoinstalls.config.tpv.device" />
+        <package android:name="org.droidtv.calmancalibrator" />
+        <package android:name="org.droidtv.amazonalexa" />
+        <package android:name="com.phorus.playfi.tv" />
+        <package android:name="com.google.android.play.games" />
+        <package android:name="org.droidtv.dropboxprovider" />
+        <package android:name="org.droidtv.astrahdplus" />
+        <package android:name="com.google.android.tvlauncher" />
+
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <!-- The TV's own home screen, whatever brand (Google TV: launcherx): the Home-button helper listens to it. -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent>
+    </queries>
+
+    <!-- Shared by both editions; the GitHub edition adds self-update and adb setup (src/github). -->
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:banner="@drawable/banner"
+        android:theme="@style/Theme.MyTV"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="false"
+        tools:targetApi="33">
+        <!-- enableOnBackInvokedCallback=false: Back keeps arriving as a key (the sleep-timer warning and the screensaver
+             read it that way); with targetSdk 36 the gesture-based callback would otherwise be the default. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|screenLayout|smallestScreenSize|uiMode|density|fontScale|locale|layoutDirection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Selectable as a home app; does not change the device default by itself. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".HomeWatch"
+            android:label="@string/home_watch_label"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/home_watch" />
+        </service>
+        <service
+            android:name=".data.MediaListener"
+            android:label="@string/now_playing"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyTvDream"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!-- Invisible, opens and closes at once after boot so a home screen already in front reports itself. -->
+        <activity
+            android:name=".Probe"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- Every 15 minutes: the Home-button helper back on when the TV stopped MyTV (only with the extra right). -->
+        <service
+            android:name=".HomeWatchGuard"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver android:name=".Restore" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <!-- The remote's Sources button while another app plays: only MyTV's Sources, over that app (own task, so
+             MyTV's home does not come along). -->
+        <activity
+            android:name=".SourcesPopup"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.MyTV.Popup" />
+        <activity
+            android:name=".DreamPreviewActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.MyTV" />
+    </application>
+</manifest>

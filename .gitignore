@@ -1,0 +1,31 @@
+# Private, never commit: the TV's address, the signing key, screenshots, logs
+private/
+.env
+*.keystore
+*.jks
+*.pem
+*.key
+*.crt
+*.p12
+local.properties
+
+# Build output
+build/
+.gradle/
+.kotlin/
+*.apk
+*.aab
+dist/
+captures/
+*.hprof
+
+# Tools and editors
+.venv/
+.bin/
+__pycache__/
+*.pyc
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db

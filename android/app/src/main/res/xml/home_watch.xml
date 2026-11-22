@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Only window-state events, only from the stock TV launcher; no window content. Key events: only the Sources and Apps
+     buttons (open MyTV's Sources and All apps), after the viewer opened the TV's own home screen from MyTV the next Home
+     press, while MyTV learns a button the next key, and while the Wireless debugging pairing-code box shows its keys; every other key is passed on unchanged (see
+     HomeWatch.onKeyEvent). -->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/home_watch_description"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:packageNames="com.google.android.tvlauncher"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="0"
+    android:canRetrieveWindowContent="false"
+    android:canRequestFilterKeyEvents="true"
+    android:accessibilityFlags="flagDefault" />

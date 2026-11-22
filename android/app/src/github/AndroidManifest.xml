@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GitHub edition only (not allowed or not needed in the Play Store edition). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Self-update: hands a verified, same-key APK to Android's installer (asks the user first, unless the next line applies). -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Android 12+: MyTV may update itself without the installer's question once it installed itself before. -->
+    <uses-permission android:name="android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION" />
+    <!-- Optional, granted only by the owner via adb (pm grant): lets MyTV keep its Home-button service on,
+         switch its screensaver on and allow its own "Now playing" access. -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" tools:ignore="ProtectedPermissions" />
+
+    <application>
+        <receiver android:name=".data.Updates$InstallResult" android:exported="false" />
+        <!-- Setup commands from adb only: DUMP is held by the adb shell, never by normal apps. -->
+        <activity
+            android:name=".Provision"
+            android:exported="true"
+            android:permission="android.permission.DUMP"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

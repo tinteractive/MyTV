@@ -1,0 +1,46 @@
+# detekt: on top of the default rule set. The code base is deliberately compact (long lines, few files),
+# so the rules that only count size are relaxed; the ones that find bugs stay on.
+style:
+  MaxLineLength:
+    maxLineLength: 200
+    excludeCommentStatements: true
+  MagicNumber:
+    active: false          # UI code is full of dp/sp/ms literals
+  WildcardImport:
+    active: false
+  ReturnCount:
+    active: false
+  ForbiddenComment:
+    active: false
+  LoopWithTooManyJumpStatements:
+    active: false
+  ThrowsCount:
+    active: false
+complexity:
+  LongMethod:
+    active: false          # Compose screens are long by nature
+  LongParameterList:
+    active: false
+  CyclomaticComplexMethod:
+    active: false
+  TooManyFunctions:
+    active: false
+  LargeClass:
+    active: false
+  NestedBlockDepth:
+    active: false
+  ComplexCondition:
+    active: false
+naming:
+  FunctionNaming:
+    ignoreAnnotated: ['Composable']
+  MatchingDeclarationName:
+    active: false
+exceptions:
+  TooGenericExceptionCaught:
+    active: false          # a home screen must survive anything a device or another app throws at it
+  SwallowedException:
+    active: false
+empty-blocks:
+  EmptyFunctionBlock:
+    ignoreOverridden: true

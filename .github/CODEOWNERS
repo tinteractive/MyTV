@@ -1,0 +1,8 @@
+# The maintainer reviews everything; these paths always need the maintainer's own approval.
+*                 @tinteractive
+/photos/          @tinteractive
+/tools/           @tinteractive
+/.github/         @tinteractive
+/android/*.kts    @tinteractive
+/android/app/build.gradle.kts  @tinteractive
+/android/gradle/  @tinteractive

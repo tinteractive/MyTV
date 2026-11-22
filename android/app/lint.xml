@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- Style suggestions (Bitmap[x, y] instead of getPixel, …): not worth 60+ mechanical edits. -->
+    <issue id="UseKtx" severity="ignore" />
+    <!-- MyTV runs on TVs only; the manifest asks for landscape on purpose. -->
+    <issue id="DiscouragedApi" severity="ignore" />
+    <!-- The Cast protocol on the home network uses self-signed device certificates; see data/Cast.kt. -->
+    <issue id="TrustAllX509TrustManager" severity="ignore">
+        <ignore path="**/data/Cast.kt" />
+    </issue>
+    <issue id="CustomX509TrustManager" severity="ignore">
+        <ignore path="**/data/Cast.kt" />
+    </issue>
+    <!-- commit() is used on purpose where the process may end right after (crash guard, restore, restart). -->
+    <issue id="ApplySharedPref" severity="ignore" />
+    <!-- False positives in correct German ("Seit dem letzten Tastendruck"). -->
+    <issue id="Typos" severity="ignore" />
+    <!-- "%d sec" style texts are value labels, not sentences; languages are fixed to six. -->
+    <issue id="PluralsCandidate" severity="ignore" />
+    <!-- The app sets its own language (six bundled ones); no Play language splits are used. -->
+    <issue id="AppBundleLocaleChanges" severity="ignore" />
+</lint>

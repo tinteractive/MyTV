@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>EmptyElseBlock:Cast.kt$Cast.Conn$if (field == 4) ns = s</ID>
+    <ID>EmptyElseBlock:Cast.kt$Cast.Conn$if (x &lt; 0x80) return r</ID>
+    <ID>EmptyElseBlock:HomeScreen.kt$if (e.type == KeyEventType.KeyDown) state.moveApp(app.key, -step)</ID>
+    <ID>EmptyElseBlock:HomeScreen.kt$if (e.type == KeyEventType.KeyDown) state.moveApp(app.key, step)</ID>
+    <ID>EmptyElseBlock:HomeScreen.kt$if (e.type == KeyEventType.KeyUp) state.moving = null</ID>
+    <ID>EmptyElseBlock:MediaApps.kt$MediaApps$if (covers.size &gt; 8) covers.clear()</ID>
+    <ID>EmptyElseBlock:Overlays.kt$if (notesScroll.canScrollBackward) scope.launch { notesScroll.animateScrollBy(-160f) }</ID>
+    <ID>EmptyElseBlock:PhotoInbox.kt$PhotoInbox$if (n &lt; 0) break</ID>
+    <ID>EmptyElseBlock:Updates.kt$Updates$if (n &lt; 0) break</ID>
+    <ID>EmptyFunctionBlock:Updates.kt$Updates${}</ID>
+    <ID>FunctionOnlyReturningConstant:LocalAdb.kt$LocalAdb$fun reachable(): Boolean</ID>
+    <ID>FunctionOnlyReturningConstant:Provision.kt$Provision$@Suppress("UNUSED_PARAMETER") fun handle(c: Context, scope: CoroutineScope, state: HomeState): Boolean?</ID>
+    <ID>FunctionOnlyReturningConstant:Updates.kt$Updates$fun shouldPrompt(c: Context)</ID>
+    <ID>MaxLineLength:HomeScreen.kt$drawPath(androidx.compose.ui.graphics.Path().apply { moveTo(s * 0.48f, s * 0.12f); lineTo(s * 0.86f, s * 0.24f); lineTo(s * 0.86f, s * 0.38f); lineTo(s * 0.48f, s * 0.27f); close() }, w)</ID>
+    <ID>MaxLineLength:HomeScreen.kt$if</ID>
+    <ID>MaxLineLength:HomeState.kt$HomeState$nowPlaying = unique.filter { (it.playing || recent(it)) &amp;&amp; it.key + "|" + it.title != npHidden }.sortedWith(compareBy&lt;com.mytv.launcher.data.NowPlaying&gt;({ !it.playing }, { -(npStarted[it.key + "|" + it.title] ?: 0L) })).firstOrNull()</ID>
+    <ID>MaxLineLength:Icons.kt$drawLine(color, Offset(s / 2 + cos(a).toFloat() * s * 0.29f, s / 2 + sin(a).toFloat() * s * 0.29f), Offset(s / 2 + cos(a).toFloat() * s * 0.4f, s / 2 + sin(a).toFloat() * s * 0.4f), st.width, StrokeCap.Round)</ID>
+    <ID>MaxLineLength:Icons.kt$drawPath(Path().apply { moveTo(s / 2, s * 0.12f); cubicTo(s * 0.2f, s * 0.5f, s * 0.22f, s * 0.86f, s / 2, s * 0.86f); cubicTo(s * 0.78f, s * 0.86f, s * 0.8f, s * 0.5f, s / 2, s * 0.12f); close() }, color, style = st)</ID>
+    <ID>MaxLineLength:Icons.kt$drawPath(Path().apply { moveTo(s / 2, s * 0.9f); cubicTo(s * 0.18f, s * 0.56f, s * 0.2f, s * 0.12f, s / 2, s * 0.12f); cubicTo(s * 0.8f, s * 0.12f, s * 0.82f, s * 0.56f, s / 2, s * 0.9f); close() }, color, style = st)</ID>
+    <ID>MaxLineLength:MetNorway.kt$MetNorway$fun prob(i: Int)</ID>
+    <ID>MaxLineLength:Overlays.kt$BasicText(if (state.photosReceived == 1) stringResource(R.string.own_done_one) else stringResource(R.string.own_done_title, state.photosReceived), style = T.style(24, FontWeight.Bold))</ID>
+    <ID>MaxLineLength:SettingsScreen.kt$.</ID>
+    <ID>MaxLineLength:SettingsScreen.kt$BasicText</ID>
+    <ID>MaxLineLength:SettingsScreen.kt$Pill</ID>
+    <ID>MaxLineLength:SleepTimer.kt$SleepTimer$val title = TextView(ctx).apply { text = ctx.getString(R.string.sleep_warning); textSize = 22f; setTextColor(0xFFFFFFFF.toInt()); gravity = Gravity.CENTER; setPadding(0, 0, 0, (18 * d).toInt()) }</ID>
+    <ID>MaxLineLength:SpeakersTest.kt$SpeakersTest$val xml = "&lt;nowPlaying deviceID=\"A\" source=\"SPOTIFY\"&gt;&lt;track&gt;Yellow&lt;/track&gt;&lt;artist&gt;Coldplay&lt;/artist&gt;&lt;art artImageStatus=\"IMAGE_PRESENT\"&gt;http://i.scdn.co/x.jpg&lt;/art&gt;&lt;playStatus&gt;PAUSE_STATE&lt;/playStatus&gt;&lt;/nowPlaying&gt;"</ID>
+    <ID>SpreadOperator:Bluetooth.kt$Bluetooth$(c, *tries.toTypedArray())</ID>
+    <ID>SpreadOperator:SystemAccess.kt$SystemAccess$(c, *tries.toTypedArray())</ID>
+    <ID>ThrowsCount:LocalAdb.kt$LocalAdb$fun shell(command: String, onApprovalNeeded: () -&gt; Unit = {}, approvalTimeoutMs: Int = 90_000): String</ID>
+    <ID>ThrowsCount:Updates.kt$Updates$private fun githubGet(address: String, api: Boolean = false): HttpURLConnection</ID>
+    <ID>UnusedParameter:HomeScreen.kt$onLabel: (String?) -&gt; Unit</ID>
+    <ID>UnusedParameter:SleepTimer.kt$SleepTimer$c: Context</ID>
+    <ID>UseCheckOrError:CrashGuard.kt$CrashGuard$throw IllegalStateException("crash guard test")</ID>
+  </CurrentIssues>
+</SmellBaseline>

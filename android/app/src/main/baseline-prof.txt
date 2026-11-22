@@ -1,0 +1,3 @@
+# Compiled ahead of time at install (profileinstaller): MyTV's own code, so the first Home press is fast.
+HSPLcom/mytv/launcher/**->**(**)**
+Lcom/mytv/launcher/**;

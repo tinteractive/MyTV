@@ -1,0 +1,81 @@
+[
+  {
+    "version": "2026.11.5",
+    "code": 2026110005,
+    "date": "2026-11-15",
+    "notes": [
+      {
+        "tag": "new",
+        "en": "First public version of MyTV Launcher: a calm home screen with your apps, the time and the weather on a photo of your choice",
+        "nl": "Eerste openbare versie van MyTV Launcher: een rustig startscherm met je apps, de tijd en het weer op een foto naar keuze",
+        "fr": "Première version publique de MyTV Launcher : un écran d’accueil calme avec vos applis, l’heure et la météo sur une photo de votre choix",
+        "de": "Erste öffentliche Version von MyTV Launcher: ein ruhiger Startbildschirm mit deinen Apps, Uhrzeit und Wetter auf einem Foto deiner Wahl",
+        "es": "Primera versión pública de MyTV Launcher: una pantalla de inicio tranquila con tus apps, la hora y el tiempo sobre una foto a tu elección",
+        "pt": "Primeira versão pública do MyTV Launcher: um ecrã inicial calmo com as suas apps, as horas e o tempo sobre uma foto à sua escolha"
+      },
+      {
+        "tag": "new",
+        "en": "Now playing shows what plays on Sonos, Google Cast, other speakers and apps on the TV",
+        "nl": "Nu speelt toont wat er speelt op Sonos, Google Cast, andere speakers en apps op de tv",
+        "fr": "En cours de lecture affiche ce qui joue sur Sonos, Google Cast, d’autres enceintes et les applis du téléviseur",
+        "de": "Läuft gerade zeigt, was auf Sonos, Google Cast, anderen Lautsprechern und Apps auf dem Fernseher läuft",
+        "es": "Reproduciendo muestra lo que suena en Sonos, Google Cast, otros altavoces y apps de la tele",
+        "pt": "A tocar mostra o que toca no Sonos, Google Cast, outras colunas e apps da TV"
+      },
+      {
+        "tag": "new",
+        "en": "Continue watching: go on where you stopped, also in YouTube",
+        "nl": "Verder kijken: ga verder waar je was gebleven, ook in YouTube",
+        "fr": "Reprendre : continuez là où vous vous étiez arrêté, aussi dans YouTube",
+        "de": "Weiterschauen: Mach dort weiter, wo du aufgehört hast, auch in YouTube",
+        "es": "Seguir viendo: continúa donde lo dejaste, también en YouTube",
+        "pt": "Continuar a ver: continue onde parou, também no YouTube"
+      },
+      {
+        "tag": "new",
+        "en": "Sources: HDMI devices and live TV with one press of OK",
+        "nl": "Bronnen: HDMI-apparaten en live tv met één druk op OK",
+        "fr": "Sources : appareils HDMI et télévision en direct d’une pression sur OK",
+        "de": "Quellen: HDMI-Geräte und Live-TV mit einem Druck auf OK",
+        "es": "Fuentes: dispositivos HDMI y televisión en directo con una pulsación de OK",
+        "pt": "Fontes: dispositivos HDMI e televisão em direto com um toque em OK"
+      },
+      {
+        "tag": "new",
+        "en": "Weather with the next hours and eight days, sun and moon",
+        "nl": "Weer met de komende uren en acht dagen, zon en maan",
+        "fr": "Météo des prochaines heures et des huit jours, soleil et lune",
+        "de": "Wetter für die nächsten Stunden und acht Tage, Sonne und Mond",
+        "es": "El tiempo de las próximas horas y ocho días, sol y luna",
+        "pt": "Tempo das próximas horas e oito dias, sol e lua"
+      },
+      {
+        "tag": "new",
+        "en": "Profiles for parent and child, screensaver, night mode, sleep timer and quiet hours",
+        "nl": "Profielen voor ouder en kind, schermbeveiliging, nachtmodus, slaaptimer en stille uren",
+        "fr": "Profils parent et enfant, économiseur d’écran, mode nuit, minuterie de veille et heures calmes",
+        "de": "Profile für Eltern und Kind, Bildschirmschoner, Nachtmodus, Sleep-Timer und Ruhezeiten",
+        "es": "Perfiles de adulto e infantil, salvapantallas, modo noche, temporizador y horas de silencio",
+        "pt": "Perfis de adulto e criança, proteção de ecrã, modo noturno, temporizador e horas de silêncio"
+      },
+      {
+        "tag": "new",
+        "en": "Your own photos and a backup of your settings, through your phone",
+        "nl": "Eigen foto’s en een back-up van je instellingen, via je telefoon",
+        "fr": "Vos photos et une sauvegarde de vos réglages, depuis votre téléphone",
+        "de": "Eigene Fotos und eine Sicherung deiner Einstellungen, über dein Handy",
+        "es": "Tus fotos y una copia de tus ajustes, desde tu móvil",
+        "pt": "As suas fotos e uma cópia das suas definições, a partir do telemóvel"
+      },
+      {
+        "tag": "security",
+        "en": "No account, no ads, no tracking: everything stays on your TV and home network",
+        "nl": "Geen account, geen reclame, geen tracking: alles blijft op je tv en thuisnetwerk",
+        "fr": "Ni compte, ni publicité, ni suivi : tout reste sur votre téléviseur et votre réseau",
+        "de": "Kein Konto, keine Werbung, kein Tracking: alles bleibt auf dem Fernseher und im Heimnetz",
+        "es": "Sin cuenta, sin anuncios, sin rastreo: todo se queda en tu tele y tu red",
+        "pt": "Sem conta, sem anúncios, sem rastreio: tudo fica na sua TV e na rede de casa"
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+name: Report how it works on your TV
+description: Tell us what works and what does not on your TV, box or stick (takes two minutes)
+title: "Device report: "
+labels: [device-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MyTV Launcher is developed on one Philips Android TV, so every report from another device helps, also when
+        everything simply works.
+        Do not include personal details such as your IP address, location or account names.
+  - type: input
+    id: device
+    attributes:
+      label: TV, box or stick
+      description: Brand and model
+      placeholder: "e.g. Chromecast with Google TV 4K, NVIDIA Shield TV Pro 2019, Sony Bravia XR-55A80J"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Android TV or Google TV?
+      options:
+        - Android TV
+        - Google TV
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: TV settings → Device preferences → About
+      placeholder: "e.g. 12"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MyTV version
+      description: Settings → System → About MyTV Launcher
+      placeholder: "2026.11.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - From a computer with ADB
+        - On the TV with the Downloader app
+        - From my phone
+        - Another way
+    validations:
+      required: true
+  - type: dropdown
+    id: home
+    attributes:
+      label: Does the Home button open MyTV?
+      options:
+        - Yes, MyTV is the default home
+        - Yes, with the Home-button helper
+        - No
+        - Not tried
+    validations:
+      required: true
+  - type: checkboxes
+    id: works
+    attributes:
+      label: What works?
+      description: Tick what you tried and found working. Leave the rest empty.
+      options:
+        - label: Home screen (clock, weather, dock, photos)
+        - label: Sources (HDMI devices, live TV)
+        - label: Screensaver
+        - label: Now playing
+        - label: Continue watching
+        - label: Sleep timer
+        - label: Bluetooth
+        - label: Updates from within MyTV
+  - type: textarea
+    id: notes
+    attributes:
+      label: What does not work, or works differently?
+      description: A photo of the screen helps. For a real problem, a separate "Report a problem" issue is even better.
